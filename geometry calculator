@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+int choice;
+int r,x,y,b,h,area;
+char select;
+
+int main()
+{
+	do
+	{
+	
+        cout << "Geometry Calculator" << endl;
+        cout << "1.Calculate the area of the circle." << endl;
+        cout << "2.Calculate the area of the rectangle." << endl;
+        cout << "3.Calculate the area of trianlge." << endl;
+        cout << "4.Quit." << endl << endl;
+        cout << "Enter your choice (1-4) : ";
+        cin >> choice;
+        cout << "\n" ;
+
+        switch(choice)
+        {
+            case 1:
+                cout << "The radius of the circle is ";
+                cin >> r;
+                area = 3.14159*r;
+                cout << "The area of the circle is " << area << endl << endl;
+                break;
+
+            case 2:
+                cout << "The lenght and width of the rectangle is ";
+                cin >> x >> y;
+                area = x * y;
+                cout << "The area of the rectangle is " << area << endl << endl;
+                break;
+
+            case 3:
+                cout << "The length of triangle's base and height is ";
+                cin >> b >> h;
+                area = b * h*0.5;
+                cout << "The area of the triangle is " << area << endl << endl;
+                break;
+                 
+            case 4:
+            	cout << "Quit the program" << endl;
+    
+         } 
+     }while(choice != 4);
+     
+     cout << endl<< "THANKYOU!" << endl;
+
+    return 0;
+}
